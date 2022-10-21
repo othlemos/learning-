@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+/*fundo gradiente */
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #000000, #150050, #3F0071, #FB2576, #2A0944, 
+    #3B185F, #A12568, #FEC260, #E3C770, #FECD70, #FFAE6D, #F3E0B5, #A7D2CB,
+    #F2D388, #C98474, #874C62);
+    background-size: 3000% 3000%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: changeColors 90s ease infinite;
+}
+
+@keyframes changeColors {
+    0% {
+background-position: 0% 50%;
+    }
+    50% {
+background-position: 100% 50%;
+    }
+    100% {
+background-position: 0% 50%;
+    }
+}
+
+/* quadrados marrons posição */
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    font-size: 60px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .9);
+}
+/* quadrados marrons dimensões */
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border: 7px;
+    letter-spacing: 3px;
+}
+/* fonte do relógio */
+.relogio span {
+    font-weight: lighter;
+    font-size: 50px;
+
+}
+
+.relogio span.tempo {
+     font-size: 10px;
+}
